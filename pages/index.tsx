@@ -1,7 +1,18 @@
 import Head from "next/head";
+import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import Box from "./../components/Box";
+
+// Tasks
+// 1. Get a list of users from '/api/users' - implementation should be added in pages/api/users.ts
+// 2. Create an interface for the user : e.g. interface IUser { .. .. .. }
+// 2. Use Box component to display user information  ( pass them as props )
+// 4. When clicking a box, update "active" state ( toggle - add/remove from array )
+// 5. Clicking a box should trigger a re-render only on the box that was clicked
+
 export default function Home() {
+  const [activeItems, setActiveItems] = useState<string[]>([]);
+
   return (
     <div className={styles.container}>
       <Head>
