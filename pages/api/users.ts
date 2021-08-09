@@ -1,0 +1,12 @@
+import type { NextApiRequest, NextApiResponse } from "next";
+
+type User = {
+  name: string;
+};
+
+export default function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<User>
+) {
+  res.status(200).json({ name: "John Doe" });
+}

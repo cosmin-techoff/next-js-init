@@ -1,5 +1,5 @@
 {
-  "name": "next-js-init",
+  "name": "techoff",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -18,5 +18,7 @@
     "eslint": "7.31.0",
     "eslint-config-next": "11.0.1",
     "typescript": "4.3.5"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
