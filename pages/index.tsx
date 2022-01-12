@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import Box from "./../components/Box";
 
@@ -11,8 +10,6 @@ import Box from "./../components/Box";
 // 5. Clicking a box should trigger a re-render only on the box that was clicked
 
 export default function Home() {
-  const [activeItems, setActiveItems] = useState<string[]>([]);
-
   return (
     <div className={styles.container}>
       <Head>

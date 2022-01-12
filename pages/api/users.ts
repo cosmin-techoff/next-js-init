@@ -3,13 +3,11 @@ import type { NextApiRequest, NextApiResponse } from "next";
 // use https://randomuser.me/api/?results=20
 // !NOTE! The mock API has some bugs, I recommend using email as key because ID sometimes is null
 
-type User = {
-  name: string;
-};
+type User = {};
 
-export default function handler(
+export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<User>
+  res: NextApiResponse<User[]>
 ) {
-  res.status(200).json({ name: "John Doe" });
+  res.status(200).json([]);
 }
